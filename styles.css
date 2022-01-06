@@ -1,0 +1,79 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    background:blue;
+}
+.top_bar{
+    background:coral; /*cadetblue;*/
+    display:flex;
+}
+.main_game{
+    display:flex;
+    background:coral;
+}
+
+[class*=col]{
+    display:flex;
+    flex-direction:column;
+}
+
+[class*=col] .circle{
+    width:45px;
+    height:45px;
+    background:cornsilk;
+    border-radius: 50%;
+    margin:3px 5px;
+}
+
+.top_bar .circle{
+    width:45px;
+    height:45px;
+    /*background:cornsilk;*/
+    border-radius: 50%;
+    margin:3px 5px;
+}
+
+h1{
+    position:absolute;
+    top:20px;
+    width:385px;
+    text-align:center;
+    background:darkcyan;
+    border-radius:36.571px;
+    padding:5px;
+    font-family: "Courier New";
+    font-size:28px;
+    color:white;
+    visibility: hidden;
+}
+
+h2{
+    position:absolute;
+    background:rgba(223, 77, 109, 0.822);
+    top:10px;
+    left:10px;
+    padding:10px 20px;
+    border-radius:145.964px;
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:bold;
+    font-weight:900;
+    visibility: hidden;
+}
+
+h2:hover{
+    box-shadow: 0 0 10px rgb(107, 104, 104);
+    cursor:pointer;
+}
